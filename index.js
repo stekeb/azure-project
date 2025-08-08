@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
 		const result = await pool.query('SELECT NOW()');
 		const currentTime = result.rows[0].now;
 		res.send(
-			`Hello! Node.js app is running. Current time from DB is: ${currentTime}`
+			`Hello! Node.js app is running Test1. Current time from DB is: ${currentTime}`
 		);
 	} catch (err) {
 		console.error('Database query failed', err);
